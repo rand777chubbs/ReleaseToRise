@@ -6,22 +6,16 @@
   <title>Release to Rise Healing</title>
   <meta name="description" content="Trauma-informed healing practice blending Reiki, intuitive energy work, and talk therapy.">
   <link rel="icon" type="image/png" href="./favicon.png">
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Cormorant:wght@600;700&display=swap" rel="stylesheet">
-  <!-- Tailwind CDN (no build needed) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root{--font-head:'Cormorant',serif;--font-body:'Quicksand',sans-serif}
-    body{font-family:var(--font-body)}
-    h1,h2,h3{font-family:var(--font-head)}
-  </style>
+  <style>:root{--font-head:'Cormorant',serif;--font-body:'Quicksand',sans-serif} body{font-family:var(--font-body)} h1,h2,h3{font-family:var(--font-head)}</style>
 </head>
-<body class="min-h-screen relative text-gray-800 selection:bg-yellow-100 selection:text-green-900">
+<body class="min-h-screen text-gray-800">
 
-  <!-- HERO (background: backpage.png) -->
+  <!-- HERO -->
   <section class="relative text-center py-20 px-6 overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-35" style="background-image:url('./backpage.png')"></div>
-    <div aria-hidden class="absolute inset-0 -z-10 bg-white/10"></div>
+    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-30" style="background-image:url('./backpage.png')"></div>
+    <div aria-hidden class="absolute inset-0 -z-10 bg-white/5"></div>
 
     <img src="./release-to-rise.png" alt="Release to Rise Logo" class="mb-6 w-36 h-36 mx-auto drop-shadow">
     <h1 class="text-5xl font-bold text-green-800 mb-4">Release to Rise Healing</h1>
@@ -32,104 +26,85 @@
     <a href="#contact" class="inline-block mt-6 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-2xl shadow-lg">Book a Session</a>
   </section>
 
-  <!-- WHAT I OFFER (background: reiki-hands.jpg) -->
-  <section class="relative py-16 px-6 overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-25" style="background-image:url('./reiki-hands.jpg')"></div>
-    <div aria-hidden class="absolute inset-0 -z-10 bg-white/10"></div>
-
-    <div class="max-w-6xl mx-auto rounded-2xl p-1">
-      <h2 class="text-3xl font-semibold text-center text-green-800 mb-10">What I Offer</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="rounded-2xl shadow-md overflow-hidden bg-white/80 backdrop-blur p-6 text-center border border-stone-100">
-          <h3 class="text-xl font-bold text-green-900 mb-2">Energy Healing Session</h3>
-          <p class="text-gray-700">Certified Reiki and intuitive energy work to uncover and release stored blockages in the body.</p>
-        </div>
-        <div class="rounded-2xl shadow-md overflow-hidden bg-white/80 backdrop-blur p-6 text-center border border-stone-100">
-          <h3 class="text-xl font-bold text-green-900 mb-2">Integration Talk Therapy</h3>
-          <p class="text-gray-700">Trauma-informed talk therapy to process and integrate insights into lasting healing.</p>
-        </div>
-        <div class="rounded-2xl shadow-md overflow-hidden bg-white/80 backdrop-blur p-6 text-center border border-stone-100">
-          <h3 class="text-xl font-bold text-green-900 mb-2">Ongoing Support</h3>
-          <p class="text-gray-700">Personalized healing plans and follow-up sessions to deepen your progress and support your journey.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW REIKI WORKS (only section using swirl) -->
+  <!-- COMBINED SECTION (swirl background) -->
   <section class="relative py-16 px-6 overflow-hidden">
     <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-25" style="background-image:url('./reiki-swirl.jpg')"></div>
-    <div class="max-w-5xl mx-auto bg-white/75 backdrop-blur rounded-2xl shadow-lg p-8">
-      <h2 class="text-3xl font-semibold text-center text-green-800 mb-6">How Reiki Works</h2>
-      <p class="text-gray-700 max-w-3xl mx-auto text-center mb-8">
-        In Reiki, the practitioner doesn’t “fix” you—they hold a grounded, compassionate space and invite universal life energy to flow.
-        Your body’s own wisdom leads the healing, gently restoring balance across mind, body, and spirit.
-      </p>
-      <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="rounded-xl bg-white/70 backdrop-blur p-5 border border-amber-100">
-          <h3 class="font-semibold text-green-900 mb-1">Holding Space</h3>
-          <p class="text-sm text-gray-700">Safe, consent-based presence so your system can soften and receive.</p>
+    <div aria-hidden class="absolute inset-0 -z-10 bg-white/5"></div>
+
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="rounded-2xl p-1">
+        <h2 class="text-3xl font-semibold text-center text-green-800 mb-8">What I Offer</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="rounded-2xl shadow-md bg-white/70 backdrop-blur p-6 text-center border border-stone-100">
+            <h3 class="text-xl font-bold text-green-900 mb-2">Energy Healing Session</h3>
+            <p class="text-gray-700">Certified Reiki and intuitive energy work to uncover and release stored blockages in the body.</p>
+          </div>
+          <div class="rounded-2xl shadow-md bg-white/70 backdrop-blur p-6 text-center border border-stone-100">
+            <h3 class="text-xl font-bold text-green-900 mb-2">Integration Talk Therapy</h3>
+            <p class="text-gray-700">Trauma-informed talk therapy to process and integrate insights into lasting healing.</p>
+          </div>
+          <div class="rounded-2xl shadow-md bg-white/70 backdrop-blur p-6 text-center border border-stone-100">
+            <h3 class="text-xl font-bold text-green-900 mb-2">Ongoing Support</h3>
+            <p class="text-gray-700">Personalized healing plans and follow-up sessions to deepen your progress and support your journey.</p>
+          </div>
         </div>
-        <div class="rounded-xl bg-white/70 backdrop-blur p-5 border border-emerald-100">
-          <h3 class="font-semibold text-green-900 mb-1">Channeling Energy</h3>
-          <p class="text-sm text-gray-700">Universal life force is directed where it’s needed most.</p>
-        </div>
-        <div class="rounded-xl bg-white/70 backdrop-blur p-5 border border-rose-100">
-          <h3 class="font-semibold text-green-900 mb-1">Your Inner Healer</h3>
-          <p class="text-sm text-gray-700">You tap into your own capacity to heal and integrate.</p>
+      </div>
+
+      <div class="max-w-5xl mx-auto bg-white/70 backdrop-blur rounded-2xl shadow p-8">
+        <h2 class="text-3xl font-semibold text-center text-green-800 mb-6">How Reiki Works</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto text-center">
+          In Reiki, the practitioner doesn’t “fix” you—they hold a grounded, compassionate space and invite universal life energy to flow.
+          Your body’s own wisdom leads the healing, gently restoring balance across mind, body, and spirit.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-semibold text-center text-green-800 mb-8">Why Release to Rise?</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-white/65 backdrop-blur p-5 border border-stone-100">
+            <h3 class="font-bold text-green-900 mb-2">Trauma informed and gentle</h3>
+            <p class="text-gray-700 text-sm">Sessions are paced with care, focused on nervous system safety and regulation.</p>
+          </div>
+          <div class="rounded-xl bg-white/65 backdrop-blur p-5 border border-stone-100">
+            <h3 class="font-bold text-green-900 mb-2">Personalized plans</h3>
+            <p class="text-gray-700 text-sm">Every plan is customized to your goals, history, and current season of life.</p>
+          </div>
+          <div class="rounded-xl bg-white/65 backdrop-blur p-5 border border-stone-100">
+            <h3 class="font-bold text-green-900 mb-2">Mind–body approach</h3>
+            <p class="text-gray-700 text-sm">Energy work plus talk integration to help insights land and last.</p>
+          </div>
+          <div class="rounded-xl bg-white/65 backdrop-blur p-5 border border-stone-100">
+            <h3 class="font-bold text-green-900 mb-2">Safe space</h3>
+            <p class="text-gray-700 text-sm">Warm, grounded presence with clear boundaries and consent at every step.</p>
+          </div>
+          <div class="rounded-xl bg-white/65 backdrop-blur p-5 border border-stone-100">
+            <h3 class="font-bold text-green-900 mb-2">Root cause focus</h3>
+            <p class="text-gray-700 text-sm">We look beyond symptoms to gently address what the body is holding.</p>
+          </div>
+          <div class="rounded-xl bg-white/65 backdrop-blur p-5 border border-stone-100">
+            <h3 class="font-bold text-green-900 mb-2">Practical integration</h3>
+            <p class="text-gray-700 text-sm">Simple practices to bring clarity and calm into daily routines.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY RELEASE TO RISE (no photo background) -->
-  <section class="py-16 px-6">
-    <div class="max-w-6xl mx-auto bg-white/75 backdrop-blur rounded-2xl shadow-lg p-8">
-      <h2 class="text-3xl font-semibold text-center text-green-800 mb-10">Why Release to Rise?</h2>
-      <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="rounded-xl bg-white/80 backdrop-blur p-5 border border-stone-100">
-          <h3 class="font-bold text-green-900 mb-2">Trauma informed and gentle</h3>
-          <p class="text-gray-700 text-sm">Sessions are paced with care, focused on nervous system safety and regulation.</p>
-        </div>
-        <div class="rounded-xl bg-white/80 backdrop-blur p-5 border border-stone-100">
-          <h3 class="font-bold text-green-900 mb-2">Personalized plans</h3>
-          <p class="text-gray-700 text-sm">Every plan is customized to your goals, history, and current season of life.</p>
-        </div>
-        <div class="rounded-xl bg-white/80 backdrop-blur p-5 border border-stone-100">
-          <h3 class="font-bold text-green-900 mb-2">Mind–body approach</h3>
-          <p class="text-gray-700 text-sm">Energy work plus talk integration to help insights land and last.</p>
-        </div>
-        <div class="rounded-xl bg-white/80 backdrop-blur p-5 border border-stone-100">
-          <h3 class="font-bold text-green-900 mb-2">Safe space</h3>
-          <p class="text-gray-700 text-sm">Warm, grounded presence with clear boundaries and consent at every step.</p>
-        </div>
-        <div class="rounded-xl bg-white/80 backdrop-blur p-5 border border-stone-100">
-          <h3 class="font-bold text-green-900 mb-2">Root cause focus</h3>
-          <p class="text-gray-700 text-sm">We look beyond symptoms to gently address what the body is holding.</p>
-        </div>
-        <div class="rounded-xl bg-white/80 backdrop-blur p-5 border border-stone-100">
-          <h3 class="font-bold text-green-900 mb-2">Practical integration</h3>
-          <p class="text-gray-700 text-sm">Simple practices to bring clarity and calm into daily routines.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS (purple background) -->
+  <!-- TESTIMONIALS -->
   <section class="relative py-16 px-6 overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-20" style="background-image:url('./purplecolor.jpg')"></div>
-    <div class="max-w-6xl mx-auto bg-white/75 backdrop-blur rounded-2xl shadow-lg p-8">
+    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-15" style="background-image:url('./purplecolor.jpg')"></div>
+    <div class="max-w-6xl mx-auto bg-white/65 backdrop-blur rounded-2xl shadow p-8">
       <h2 class="text-3xl font-semibold text-center text-green-800 mb-10">Client Testimonials</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <blockquote class="rounded-2xl p-6 bg-white/80 backdrop-blur shadow border border-amber-100">
+        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-amber-100">
           <p class="italic text-gray-800">"I felt grounded and lighter after one session. The calm stayed with me all week."</p>
           <footer class="mt-4 text-sm text-gray-600">— M.R., Salt Lake City</footer>
         </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/80 backdrop-blur shadow border border-emerald-100">
+        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-emerald-100">
           <p class="italic text-gray-800">"Compassionate, clear, and safe. I finally released patterns I have carried for years."</p>
           <footer class="mt-4 text-sm text-gray-600">— A.L., Park City</footer>
         </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/80 backdrop-blur shadow border border-stone-100">
+        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-stone-100">
           <p class="italic text-gray-800">"The integration conversation helped me make real changes at home and work."</p>
           <footer class="mt-4 text-sm text-gray-600">— J.S., Online Client</footer>
         </blockquote>
@@ -137,10 +112,10 @@
     </div>
   </section>
 
-  <!-- MISSION (purple background, lighter) -->
+  <!-- MISSION -->
   <section class="relative py-20 px-6 text-center overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-15" style="background-image:url('./purplecolor.jpg')"></div>
-    <div class="max-w-4xl mx-auto bg-white/75 backdrop-blur rounded-2xl shadow p-8">
+    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-12" style="background-image:url('./purplecolor.jpg')"></div>
+    <div class="max-w-4xl mx-auto bg-white/60 backdrop-blur rounded-2xl shadow p-8">
       <h2 class="text-3xl font-semibold text-green-800 mb-6">My Mission</h2>
       <p class="text-lg text-gray-700 max-w-3xl mx-auto">
         To create a safe, nurturing space where you can reconnect with your inner wisdom,
@@ -149,9 +124,10 @@
     </div>
   </section>
 
-  <!-- CONTACT / CTA -->
-  <section id="contact" class="py-20 text-center">
-    <div class="max-w-3xl mx-auto bg-white/75 backdrop-blur rounded-2xl shadow p-8">
+  <!-- READY TO BEGIN (backpage) -->
+  <section id="contact" class="relative py-20 text-center overflow-hidden">
+    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover opacity-25" style="background-image:url('./backpage.png')"></div>
+    <div class="max-w-3xl mx-auto bg-white/60 backdrop-blur rounded-2xl shadow p-8">
       <h2 class="text-4xl font-bold text-green-800 mb-4">Ready to Begin Your Healing Journey?</h2>
       <p class="text-gray-700 mb-6">Reach out to book an introductory session.</p>
       <div class="flex flex-col items-center gap-2">
