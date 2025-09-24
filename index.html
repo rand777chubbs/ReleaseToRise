@@ -8,46 +8,53 @@
   <link rel="icon" type="image/png" href="./favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Cormorant:wght@600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>:root{--font-head:'Cormorant',serif;--font-body:'Quicksand',sans-serif} body{font-family:var(--font-body)} h1,h2,h3{font-family:var(--font-head)}</style>
+  <style>
+    html { font-size: 120%; } /* Global +20% */
+    :root{--font-head:'Cormorant',serif;--font-body:'Quicksand',sans-serif}
+    body{font-family:var(--font-body)}
+    h1,h2,h3{font-family:var(--font-head)}
+  </style>
 </head>
 <body class="min-h-screen text-gray-800">
 
-  <section class="relative text-center py-20 px-6 overflow-hidden">
+  <!-- HERO -->
+  <section class="relative text-center py-20 px-6 overflow-hidden" style="font-size:130%">
     <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./backpage.png'); opacity:.30"></div>
-    <img src="./release-to-rise.png" alt="Release to Rise Logo" class="mb-6 w-36 h-36 mx-auto drop-shadow">
+    <img src="./release-to-rise.png" alt="Release to Rise Logo" class="mb-6 w-44 h-44 mx-auto drop-shadow">
     <h1 class="text-5xl font-bold text-green-800 mb-4">Release to Rise Healing</h1>
-    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+    <p class="text-lg text-gray-800 max-w-2xl mx-auto font-bold">
       A trauma-informed healing practice blending Reiki, intuitive energy work, and talk therapy.
       Helping you release emotional blockages, process trauma, and achieve balance—mentally, emotionally, and spiritually.
     </p>
-    <a href="#contact" class="inline-block mt-6 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-2xl shadow-lg">Book a Session</a>
+    <a href="#contact" class="inline-block mt-6 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-2xl shadow-lg font-bold">Book a Session</a>
   </section>
 
+  <!-- COMBINED SWIRL SECTION -->
   <section class="relative py-16 px-6 overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./reiki-swirl.jpg'); opacity:.40"></div>
+    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./reiki-swirl.jpg'); opacity:.6"></div>
 
     <div class="max-w-6xl mx-auto space-y-14">
       <div class="rounded-2xl p-1">
         <h2 class="text-4xl md:text-5xl font-semibold text-center text-green-800 mb-10">What I Offer</h2>
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="rounded-2xl shadow-md bg-white/70 backdrop-blur p-8 md:p-10 text-center border border-stone-100">
+          <div class="rounded-2xl shadow-md bg-white/30 backdrop-blur-sm p-8 md:p-10 text-center border border-stone-100">
             <h3 class="text-2xl font-bold text-green-900 mb-3">Energy Healing Session</h3>
-            <p class="text-gray-700">Certified Reiki and intuitive energy work to uncover and release stored blockages in the body.</p>
+            <p class="text-gray-800">Certified Reiki and intuitive energy work to uncover and release stored blockages in the body.</p>
           </div>
-          <div class="rounded-2xl shadow-md bg-white/70 backdrop-blur p-8 md:p-10 text-center border border-stone-100">
+          <div class="rounded-2xl shadow-md bg-white/30 backdrop-blur-sm p-8 md:p-10 text-center border border-stone-100">
             <h3 class="text-2xl font-bold text-green-900 mb-3">Integration Talk Therapy</h3>
-            <p class="text-gray-700">Trauma-informed talk therapy to process and integrate insights into lasting healing.</p>
+            <p class="text-gray-800">Trauma-informed talk therapy to process and integrate insights into lasting healing.</p>
           </div>
-          <div class="rounded-2xl shadow-md bg-white/70 backdrop-blur p-8 md:p-10 text-center border border-stone-100">
+          <div class="rounded-2xl shadow-md bg-white/30 backdrop-blur-sm p-8 md:p-10 text-center border border-stone-100">
             <h3 class="text-2xl font-bold text-green-900 mb-3">Ongoing Support</h3>
-            <p class="text-gray-700">Personalized healing plans and follow-up sessions to deepen your progress and support your journey.</p>
+            <p class="text-gray-800">Personalized healing plans and follow-up sessions to deepen your progress and support your journey.</p>
           </div>
         </div>
       </div>
 
-      <div class="max-w-5xl mx-auto bg-white/70 backdrop-blur rounded-2xl shadow p-8 md:p-10">
+      <div class="max-w-5xl mx-auto bg-white/25 backdrop-blur-sm rounded-2xl shadow p-8 md:p-10">
         <h2 class="text-4xl md:text-5xl font-semibold text-center text-green-800 mb-6">How Reiki Works</h2>
-        <p class="text-gray-700 max-w-3xl mx-auto text-center">
+        <p class="text-gray-800 max-w-3xl mx-auto text-center">
           In Reiki, the practitioner doesn’t “fix” you—they hold a grounded, compassionate space and invite universal life energy to flow.
           Your body’s own wisdom leads the healing, gently restoring balance across mind, body, and spirit.
         </p>
@@ -56,89 +63,87 @@
       <div class="max-w-6xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-semibold text-center text-green-800 mb-8">Why Release to Rise?</h2>
         <div class="grid md:grid-cols-3 gap-6">
-          <div class="rounded-xl bg-white/65 backdrop-blur p-6 border border-stone-100">
+          <div class="rounded-xl bg-white/25 backdrop-blur-sm p-6 border border-stone-100">
             <h3 class="font-bold text-green-900 mb-2">Trauma informed and gentle</h3>
-            <p class="text-gray-700 text-sm">Sessions are paced with care, focused on nervous system safety and regulation.</p>
+            <p class="text-gray-800 text-sm">Sessions are paced with care, focused on nervous system safety and regulation.</p>
           </div>
-          <div class="rounded-xl bg-white/65 backdrop-blur p-6 border border-stone-100">
+          <div class="rounded-xl bg-white/25 backdrop-blur-sm p-6 border border-stone-100">
             <h3 class="font-bold text-green-900 mb-2">Personalized plans</h3>
-            <p class="text-gray-700 text-sm">Every plan is customized to your goals, history, and current season of life.</p>
+            <p class="text-gray-800 text-sm">Every plan is customized to your goals, history, and current season of life.</p>
           </div>
-          <div class="rounded-xl bg-white/65 backdrop-blur p-6 border border-stone-100">
+          <div class="rounded-xl bg-white/25 backdrop-blur-sm p-6 border border-stone-100">
             <h3 class="font-bold text-green-900 mb-2">Mind–body approach</h3>
-            <p class="text-gray-700 text-sm">Energy work plus talk integration to help insights land and last.</p>
+            <p class="text-gray-800 text-sm">Energy work plus talk integration to help insights land and last.</p>
           </div>
-          <div class="rounded-xl bg-white/65 backdrop-blur p-6 border border-stone-100">
+          <div class="rounded-xl bg-white/25 backdrop-blur-sm p-6 border border-stone-100">
             <h3 class="font-bold text-green-900 mb-2">Safe space</h3>
-            <p class="text-gray-700 text-sm">Warm, grounded presence with clear boundaries and consent at every step.</p>
+            <p class="text-gray-800 text-sm">Warm, grounded presence with clear boundaries and consent at every step.</p>
           </div>
-          <div class="rounded-xl bg-white/65 backdrop-blur p-6 border border-stone-100">
+          <div class="rounded-xl bg-white/25 backdrop-blur-sm p-6 border border-stone-100">
             <h3 class="font-bold text-green-900 mb-2">Root cause focus</h3>
-            <p class="text-gray-700 text-sm">We look beyond symptoms to gently address what the body is holding.</p>
+            <p class="text-gray-800 text-sm">We look beyond symptoms to gently address what the body is holding.</p>
           </div>
-          <div class="rounded-xl bg-white/65 backdrop-blur p-6 border border-stone-100">
+          <div class="rounded-xl bg-white/25 backdrop-blur-sm p-6 border border-stone-100">
             <h3 class="font-bold text-green-900 mb-2">Practical integration</h3>
-            <p class="text-gray-700 text-sm">Simple practices to bring clarity and calm into daily routines.</p>
+            <p class="text-gray-800 text-sm">Simple practices to bring clarity and calm into daily routines.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- COMBINED PURPLEBOTTOM SECTION -->
   <section class="relative py-16 px-6 overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./purplebottom.jpg'); opacity:.40"></div>
-    <div class="max-w-6xl mx-auto bg-white/65 backdrop-blur rounded-2xl shadow p-8">
-      <h2 class="text-4xl md:text-5xl font-semibold text-center text-green-800 mb-10">Client Testimonials</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-amber-100">
-          <p class="italic text-gray-800">"I felt grounded and lighter after one session. The calm stayed with me all week."</p>
-          <footer class="mt-4 text-sm text-gray-600">— M.R., Salt Lake City</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-emerald-100">
-          <p class="italic text-gray-800">"Compassionate, clear, and safe. I finally released patterns I have carried for years."</p>
-          <footer class="mt-4 text-sm text-gray-600">— A.L., Draper</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-stone-100">
-          <p class="italic text-gray-800">"The integration conversation helped me make real changes at home and work."</p>
-          <footer class="mt-4 text-sm text-gray-600">— J.S., Online Client</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-stone-100">
-          <p class="italic text-gray-800">"The physical pain I’d been dealing with for years finally began to ease. I walked out feeling lighter in my body and more hopeful."</p>
-          <footer class="mt-4 text-sm text-gray-600">— Jessica,Provo</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-stone-100">
-          <p class="italic text-gray-800">"I accomplished more healing with Randy in a few sessions than in ten years of traditional talk therapy."</p>
-          <footer class="mt-4 text-sm text-gray-600">— Rachel</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl p-6 bg-white/70 backdrop-blur shadow border border-stone-100">
-          <p class="italic text-gray-800">"I feel like a new person. I don’t know how he does it, but his work is nothing short of miraculous. He has a gift, and I’m so glad he’s sharing it with the world."</p>
-          <footer class="mt-4 text-sm text-gray-600">— Anne</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./purplebottom.jpg'); opacity:.25"></div>
 
-  <section class="relative py-20 px-6 text-center overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./purplebottom.jpg'); opacity:.40"></div>
-    <div class="max-w-4xl mx-auto bg-white/60 backdrop-blur rounded-2xl shadow p-8">
-      <h2 class="text-4xl md:text-5xl font-semibold text-green-800 mb-6">My Mission</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-        To create a safe, nurturing space where you can reconnect with your inner wisdom,
-        release past pain, and step into your most balanced and empowered self.
-      </p>
-    </div>
-  </section>
-
-  <section id="contact" class="relative py-20 text-center overflow-hidden">
-    <div aria-hidden class="absolute inset-0 -z-10 bg-center bg-cover" style="background-image:url('./purplebottom.jpg'); opacity:.40"></div>
-    <div class="max-w-3xl mx-auto bg-white/60 backdrop-blur rounded-2xl shadow p-8">
-      <h2 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">Ready to Begin Your Healing Journey?</h2>
-      <p class="text-gray-700 mb-6">Reach out to book an introductory session.</p>
-      <div class="flex flex-col items-center gap-2">
-        <a href="mailto:ReleaseToRiseHealing@gmail.com" class="text-green-800 underline">ReleaseToRiseHealing@gmail.com</a>
-        <a href="tel:+18019801522" class="text-green-800 underline">(801) 980-1522</a>
+    <div class="max-w-6xl mx-auto space-y-14">
+      <div class="bg-white/20 backdrop-blur-sm rounded-2xl shadow p-8">
+        <h2 class="text-4xl md:text-5xl font-semibold text-center text-green-800 mb-10">Client Testimonials</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <blockquote class="rounded-2xl p-6 bg-white/25 backdrop-blur-sm shadow border border-stone-100">
+            <p class="italic text-gray-900">"I felt grounded and lighter after one session. The calm stayed with me all week."</p>
+            <footer class="mt-4 text-sm text-gray-700">— M.R., Salt Lake City</footer>
+          </blockquote>
+          <blockquote class="rounded-2xl p-6 bg-white/25 backdrop-blur-sm shadow border border-stone-100">
+            <p class="italic text-gray-900">"Compassionate, clear, and safe. I finally released patterns I have carried for years."</p>
+            <footer class="mt-4 text-sm text-gray-700">— A.L., Park City</footer>
+          </blockquote>
+          <blockquote class="rounded-2xl p-6 bg-white/25 backdrop-blur-sm shadow border border-stone-100">
+            <p class="italic text-gray-900">"The integration conversation helped me make real changes at home and work."</p>
+            <footer class="mt-4 text-sm text-gray-700">— J.S., Online Client</footer>
+          </blockquote>
+          <blockquote class="rounded-2xl p-6 bg-white/25 backdrop-blur-sm shadow border border-stone-100">
+            <p class="italic text-gray-900">"The physical pain I’d been dealing with for years finally began to ease. I walked out feeling lighter in my body and more hopeful."</p>
+            <footer class="mt-4 text-sm text-gray-700">— Jessica</footer>
+          </blockquote>
+          <blockquote class="rounded-2xl p-6 bg-white/25 backdrop-blur-sm shadow border border-stone-100">
+            <p class="italic text-gray-900">"I accomplished more healing with Randy in a few sessions than in ten years of traditional talk therapy."</p>
+            <footer class="mt-4 text-sm text-gray-700">— Rachel</footer>
+          </blockquote>
+          <blockquote class="rounded-2xl p-6 bg-white/25 backdrop-blur-sm shadow border border-stone-100">
+            <p class="italic text-gray-900">"I feel like a new person. I don’t know how he does it, but his work is nothing short of miraculous. He has a gift, and I’m so glad he’s sharing it with the world."</p>
+            <footer class="mt-4 text-sm text-gray-700">— Anne</footer>
+          </blockquote>
+        </div>
       </div>
-      <a href="https://calendly.com/release-to-rise" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-2xl shadow-lg">Schedule a Session</a>
+
+      <div class="max-w-4xl mx-auto bg-white/20 backdrop-blur-sm rounded-2xl shadow p-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-semibold text-green-800 mb-6">My Mission</h2>
+        <p class="text-lg text-gray-900 max-w-3xl mx-auto">
+          To create a safe, nurturing space where you can reconnect with your inner wisdom,
+          release past pain, and step into your most balanced and empowered self.
+        </p>
+      </div>
+
+      <div id="contact" class="max-w-3xl mx-auto bg-white/20 backdrop-blur-sm rounded-2xl shadow p-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-green-800 mb-4">Ready to Begin Your Healing Journey?</h2>
+        <p class="text-gray-900 mb-6 font-semibold">Reach out to book an introductory session.</p>
+        <div class="flex flex-col items-center gap-2">
+          <a href="mailto:ReleaseToRiseHealing@gmail.com" class="text-green-800 underline font-semibold">ReleaseToRiseHealing@gmail.com</a>
+          <a href="tel:+18019801522" class="text-green-800 underline font-semibold">(801) 980-1522</a>
+        </div>
+        <a href="https://calendly.com/release-to-rise" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-2xl shadow-lg font-bold">Schedule a Session</a>
+      </div>
     </div>
   </section>
 
