@@ -314,7 +314,7 @@
           type="button"
           class="inline-flex items-center justify-center bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-4 rounded-2xl shadow-lg font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
           aria-label="Schedule a session via Calendly"
-          onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/release-to-rise?background_color=ffffff&text_color=16530a&primary_color=14532d&hide_gdpr_banner=1' }); return false;">
+          onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/release-to-rise?hide_gdpr_banner=1' }); return false;">
           Schedule a Session
         </button>
       </div>
@@ -341,7 +341,7 @@
       <!-- Inline Calendly -->
       <div class="mt-10">
         <div class="calendly-inline-widget"
-             data-url="https://calendly.com/release-to-rise?hide_event_type_details=1&hide_gdpr_banner=1&background_color=ffffff&text_color=16530a&primary_color=14532d"
+             data-url="https://calendly.com/release-to-rise?hide_event_type_details=1&hide_gdpr_banner=1"
              style="min-width:320px;height:760px;"></div>
       </div>
     </div>
@@ -406,7 +406,7 @@
       btn.addEventListener('click', function(e){
         e.preventDefault();
         Calendly.initPopupWidget({
-          url: 'https://calendly.com/release-to-rise?background_color=ffffff&text_color=16530a&primary_color=14532d&hide_gdpr_banner=1'
+          url: 'https://calendly.com/release-to-rise?hide_gdpr_banner=1'
         });
         return false;
       });
