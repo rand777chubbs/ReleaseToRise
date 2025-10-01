@@ -360,6 +360,18 @@
         <div class="calendly-inline-widget"
              data-url="https://calendly.com/release-to-rise?hide_event_type_details=1&hide_gdpr_banner=1"
              style="min-width:320px;height:760px;"></div>
+        <script>
+  window.dataLayer = window.dataLayer || [];
+  window.addEventListener('message', function(e) {
+    if (!e.data || !e.data.event) return;
+    if (e.data.event === 'calendly.event_scheduled') {
+      window.dataLayer.push({
+        event: 'calendly_event_scheduled',
+        calendly_event: e.data.payload?.event?.name || 'Unknown'
+      });
+    }
+  });
+</script>
       </div>
     </div>
 
