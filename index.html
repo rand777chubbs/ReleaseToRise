@@ -1,17 +1,15 @@
 <!doctype html>
-<div class="bg-green-900 text-white text-center px-4 py-3 text-lg font-bold shadow-md">
+<div id="promo-banner" class="bg-green-900 text-white text-center px-4 py-3 text-lg font-bold shadow-md">
   🎉 New Clients: <span class="underline">25% OFF</span> your first session with code 
   <span class="bg-white text-green-900 px-2 py-1 rounded">RISE25</span> — Limited Time!
 </div>
 <html lang="en">
-<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6E27FHTPSH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-
   gtag('config', 'G-6E27FHTPSH');
 </script>
 
@@ -338,11 +336,11 @@
 
       <!-- Contact chips -->
       <div class="mt-6 flex flex-wrap justify-center gap-3">
-        <a href="https://share.google/vkBrS4q4Ccy13ezsY"
-           class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-stone-200 text-green-900 px-4 py-2 rounded-full shadow-sm hover:bg-white"
-           aria-label="Call or text via Google listing">
-          📞 Call / Text: 801-980-1522
-        </a>
+     <a href="tel:8019801522"
+   class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-stone-200 text-green-900 px-4 py-2 rounded-full shadow-sm hover:bg-white"
+   aria-label="Call or text now">
+  📞 Call / Text: 801-980-1522
+</a>
         <a href="mailto:ReleaseToRiseHealing@gmail.com"
            class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-stone-200 text-green-900 px-4 py-2 rounded-full shadow-sm hover:bg-white"
            aria-label="Email Release to Rise">
@@ -464,6 +462,46 @@
     }
   });
 </script>
+<script>
+  // --- Calendly booking complete -> GA4 "generate_lead" ---
+  window.addEventListener('message', function(e) {
+    if (!e.data || !e.data.event) return;
+    if (e.data.event === 'calendly.event_scheduled') {
+      const evName = e?.data?.payload?.event?.name || 'Unknown';
+      gtag('event', 'generate_lead', {
+        method: 'calendly',
+        event_name: evName
+      });
+    }
+  });
 
+  // --- Click-to-call tracking for any tel: link ---
+  document.addEventListener('click', function(e) {
+    const a = e.target.closest('a[href^="tel:"]');
+    if (a) {
+      gtag('event', 'click_to_call', { link_url: a.getAttribute('href') });
+    }
+  }, { capture: true });
+
+  // --- Promo banner click (RISE25) ---
+  (function() {
+    const promo = document.getElementById('promo-banner');
+    if (promo) {
+      promo.addEventListener('click', function() {
+        gtag('event', 'promo_click', { code: 'RISE25' });
+        // Optional: smooth scroll to booking
+        const target = document.getElementById('contact');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  })();
+
+  // --- Stripe payment success (optional) ---
+  // If you ever send users to Stripe and back to a success page, set a success URL like:
+  // https://your-site/thank-you?paid=1
+  if (location.pathname.includes('thank-you') || location.search.includes('paid=1')) {
+    gtag('event', 'payment_success');
+  }
+</script>
 </body>
 </html>
