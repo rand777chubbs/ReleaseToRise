@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Thank You | Release to Rise Healing</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- GA4 base (already on your site) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6E27FHTPSH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','G-6E27FHTPSH');
+  </script>
+</head>
+<body class="font-[Quicksand] flex flex-col items-center justify-center min-h-screen bg-green-50 text-center text-green-900 p-6">
+  <h1 class="text-4xl font-semibold mb-4">Thank you for booking your session 🌿</h1>
+  <p class="max-w-xl text-lg">Your appointment has been confirmed. A confirmation email is on its way.  
+     We look forward to seeing you soon.</p>
+  <a href="/" class="mt-8 inline-block bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition">Return Home</a>
+
+  <script>
+    // Fire GA4 conversion event
+    if (typeof gtag==='function'){
+      gtag('event','generate_lead',{method:'setmore',source:'thank_you'});
+    }
+  </script>
+</body>
+</html>
